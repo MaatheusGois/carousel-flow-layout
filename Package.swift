@@ -13,7 +13,8 @@ let package = Package(
             .target(
                 name: "UPCarouselFlowLayout",
                 path: "UPCarouselFlowLayout",
-                exclude: ["Info.plist", "UPCarouselFlowLayout.h"]),
-                
+                exclude: ["Info.plist", "UPCarouselFlowLayout.h"]
+            )
+        ]
     ]
 )
