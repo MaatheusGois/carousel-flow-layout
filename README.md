@@ -1,7 +1,7 @@
-UPCarouselFlowLayout
+CarouselFlowLayout
 ===============
 
-`UPCarouselFlowLayout` is a fancy carousel flow layout for `UICollectionView`. It comes with a paginated effect and it shrinks and makes transparent the side items.
+`CarouselFlowLayout` is a fancy carousel flow layout for `UICollectionView`. It comes with a paginated effect and it shrinks and makes transparent the side items.
 
 ![demo](images/demo.gif)
 
@@ -13,11 +13,11 @@ UPCarouselFlowLayout
 
 ### CocoaPods
 
-`UPCarouselFlowLayout` is available through [CocoaPods](http://cocoapods.org). To install
+`CarouselFlowLayout` is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```
-pod "UPCarouselFlowLayout"
+pod "CarouselFlowLayout"
 ```
 
 ### Carthage
@@ -25,12 +25,12 @@ pod "UPCarouselFlowLayout"
 Users can simply add to their Cartfile:
 
 ```
-github "ink-spot/UPCarouselFlowLayout"
+github "ink-spot/CarouselFlowLayout"
 ```
 
 ### Manual
 
-Simply copy the folder `UPCarouselFlowLayout` to your project and import it in XCode.
+Simply copy the folder `CarouselFlowLayout` to your project and import it in XCode.
 
 ## Usage
 
@@ -39,26 +39,26 @@ Simply copy the folder `UPCarouselFlowLayout` to your project and import it in X
 ##### Via code
 
 ```swift
-import UPCarouselFlowLayout
+import CarouselFlowLayout
 ```
 
-Create a `UPCarouselFlowLayout` object, set its `itemSize` and assign it to your `UICollectionView`.
+Create a `CarouselFlowLayout` object, set its `itemSize` and assign it to your `UICollectionView`.
 
 ```swift
-let layout = UPCarouselFlowLayout()
+let layout = CarouselFlowLayout()
 layout.itemSize = CGSizeMake(200, 200)
 collectionView.collectionViewLayout = layout
 ```
 
 ##### Via Interface Builder
 
-Set the `UICollectionView` layout class to `UPCarouselFlowLayout`, and set its `itemSize` and its properties.
+Set the `UICollectionView` layout class to `CarouselFlowLayout`, and set its `itemSize` and its properties.
 
 ![demo](images/ib_settings.png)
 
 ### Properties
 
-`UPCarouselFlowLayout` has a few customizable properties:
+`CarouselFlowLayout` has a few customizable properties:
 
 * `sideItemScale` (between 0 and 1, default is 0.6)
 *Can be set through code or via Interface Builder.*
@@ -74,13 +74,13 @@ A vertical/horizontal offset (depending on the collectionView scroll direction) 
 
 * `spacingMode` (default is fixed spacing of 40 pts)
 *Can be set only through code.*
-  * `UPCarouselFlowLayoutSpacingMode.fixed(spacing: CGFloat)`
+  * `CarouselFlowLayoutSpacingMode.fixed(spacing: CGFloat)`
 Items in the carousel are positioned with a fixed space between them.
-  * `UPCarouselFlowLayoutSpacingMode.overlap(visibleOffset: CGFloat)`
+  * `CarouselFlowLayoutSpacingMode.overlap(visibleOffset: CGFloat)`
 A fixed part of the side items are visible on the sides of the collection (and therefore the space between items depends on the collection size).
 
 
 ## License
 
-`UPCarouselFlowLayout` is released under the MIT license.
+`CarouselFlowLayout` is released under the MIT license.
 See [LICENSE](./LICENSE) for details.

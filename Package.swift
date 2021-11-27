@@ -2,19 +2,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "UPCarouselFlowLayout",
+    name: "CarouselFlowLayout",
     platforms: [ .iOS(.v8) ],
     products: [
         .library(
-            name: "UPCarouselFlowLayout", targets: ["UPCarouselFlowLayout"])
+            name: "CarouselFlowLayout", targets: ["CarouselFlowLayout"])
         ],
-        dependencies: [ ],
-        targets: [
-            .target(
-                name: "UPCarouselFlowLayout",
-                path: "UPCarouselFlowLayout",
-                exclude: ["Info.plist", "UPCarouselFlowLayout.h"]
-            )
-        ]
+    dependencies: [ ],
+    targets: [
+        .target(
+            name: "CarouselFlowLayout",
+            path: "CarouselFlowLayout",
+            exclude: ["Info.plist", "CarouselFlowLayout.h"]
+        )
     ]
 )

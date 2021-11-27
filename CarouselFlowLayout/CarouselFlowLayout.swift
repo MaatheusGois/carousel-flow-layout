@@ -1,6 +1,6 @@
 //
-//  UPCarouselFlowLayout.swift
-//  UPCarouselFlowLayoutDemo
+//  CarouselFlowLayout.swift
+//  CarouselFlowLayoutDemo
 //
 //  Created by Paul Ulric on 23/06/2016.
 //  Copyright © 2016 Paul Ulric. All rights reserved.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-public enum UPCarouselFlowLayoutSpacingMode {
+public enum CarouselFlowLayoutSpacingMode {
     case fixed(spacing: CGFloat)
     case overlap(visibleOffset: CGFloat)
 }
 
-open class UPCarouselFlowLayout: UICollectionViewFlowLayout {
+open class CarouselFlowLayout: UICollectionViewFlowLayout {
 
     fileprivate struct LayoutState {
         var size: CGSize
@@ -26,7 +26,7 @@ open class UPCarouselFlowLayout: UICollectionViewFlowLayout {
     @IBInspectable open var sideItemScale: CGFloat = 0.6
     @IBInspectable open var sideItemAlpha: CGFloat = 0.6
     @IBInspectable open var sideItemShift: CGFloat = 0.0
-    open var spacingMode = UPCarouselFlowLayoutSpacingMode.fixed(spacing: 40)
+    open var spacingMode = CarouselFlowLayoutSpacingMode.fixed(spacing: 40)
 
     fileprivate var state = LayoutState(size: CGSize.zero, direction: .horizontal)
 

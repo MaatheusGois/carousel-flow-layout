@@ -15,11 +15,8 @@
 		01D3879C1D229BFC00CE4E1F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D387921D229BFC00CE4E1F /* Character.swift */; };
 		01D3879D1D229BFC00CE4E1F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D387931D229BFC00CE4E1F /* GradientView.swift */; };
 		01D387A01D229BFC00CE4E1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D387961D229BFC00CE4E1F /* ViewController.swift */; };
-		01D387A31D229E4A00CE4E1F /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D387A21D229E4A00CE4E1F /* UPCarouselFlowLayout.swift */; };
-		841C95011DDEE57F00B997F5 /* UPCarouselFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 841C94FF1DDEE57F00B997F5 /* UPCarouselFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		841C95041DDEE57F00B997F5 /* UPCarouselFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841C94FD1DDEE57F00B997F5 /* UPCarouselFlowLayout.framework */; };
 		841C95051DDEE57F00B997F5 /* UPCarouselFlowLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 841C94FD1DDEE57F00B997F5 /* UPCarouselFlowLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		841C950A1DDEE5A100B997F5 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D387A21D229E4A00CE4E1F /* UPCarouselFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +54,7 @@
 		01D387931D229BFC00CE4E1F /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		01D387941D229BFC00CE4E1F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01D387961D229BFC00CE4E1F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		01D387A21D229E4A00CE4E1F /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
-		841C94F01DDEE4E300B997F5 /* UPCarouselFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UPCarouselFlowLayout.h; sourceTree = "<group>"; };
 		841C94FD1DDEE57F00B997F5 /* UPCarouselFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UPCarouselFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		841C94FF1DDEE57F00B997F5 /* UPCarouselFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UPCarouselFlowLayout.h; sourceTree = "<group>"; };
-		841C95001DDEE57F00B997F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				01D3878A1D229BFC00CE4E1F /* UPCarouselFlowLayoutDemo */,
-				841C94EF1DDEE4E300B997F5 /* UPCarouselFlowLayout */,
-				841C94FE1DDEE57F00B997F5 /* UPCarouselFlowLayout */,
 				01D3876C1D1C4B9D00CE4E1F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,24 +109,6 @@
 			path = UPCarouselFlowLayoutDemo;
 			sourceTree = "<group>";
 		};
-		841C94EF1DDEE4E300B997F5 /* UPCarouselFlowLayout */ = {
-			isa = PBXGroup;
-			children = (
-				841C94F01DDEE4E300B997F5 /* UPCarouselFlowLayout.h */,
-				01D387A21D229E4A00CE4E1F /* UPCarouselFlowLayout.swift */,
-			);
-			path = UPCarouselFlowLayout;
-			sourceTree = "<group>";
-		};
-		841C94FE1DDEE57F00B997F5 /* UPCarouselFlowLayout */ = {
-			isa = PBXGroup;
-			children = (
-				841C94FF1DDEE57F00B997F5 /* UPCarouselFlowLayout.h */,
-				841C95001DDEE57F00B997F5 /* Info.plist */,
-			);
-			path = UPCarouselFlowLayout;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -143,7 +116,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841C95011DDEE57F00B997F5 /* UPCarouselFlowLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +172,7 @@
 					01D3876A1D1C4B9D00CE4E1F = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 1110;
+						ProvisioningStyle = Manual;
 					};
 					841C94FC1DDEE57F00B997F5 = {
 						CreatedOnToolsVersion = 8.1;
@@ -255,7 +228,6 @@
 			files = (
 				01D3879C1D229BFC00CE4E1F /* Character.swift in Sources */,
 				01D3879B1D229BFC00CE4E1F /* CarouselCollectionViewCell.swift in Sources */,
-				01D387A31D229E4A00CE4E1F /* UPCarouselFlowLayout.swift in Sources */,
 				01D3879D1D229BFC00CE4E1F /* GradientView.swift in Sources */,
 				01D387A01D229BFC00CE4E1F /* ViewController.swift in Sources */,
 				01D387971D229BFC00CE4E1F /* AppDelegate.swift in Sources */,
@@ -266,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841C950A1DDEE5A100B997F5 /* UPCarouselFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,13 +378,14 @@
 		01D3877E1D1C4B9D00CE4E1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UPCarouselFlowLayoutDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UP.UPCarouselFlowLayoutDemo;
 				PRODUCT_NAME = UPCarouselFlowLayoutDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
@@ -422,13 +394,14 @@
 		01D3877F1D1C4B9D00CE4E1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UPCarouselFlowLayoutDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UP.UPCarouselFlowLayoutDemo;
 				PRODUCT_NAME = UPCarouselFlowLayoutDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
